@@ -1,0 +1,114 @@
+body, figure, figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  padding:3em;
+   margin-left:auto;
+  margin-right:auto; 
+}
+
+.mainDocumentation{
+  color: white;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  margin: 30px 20px;
+  margin-left:auto;
+  margin-right:auto; 
+}
+
+p {
+  margin: 10px 0;
+  padding: 0;
+  font-color:white;
+}
+
+#container3 {
+  margin: 0 10px;
+  text-align: center;
+ /* position:absolute;*/
+}
+
+#videoSource {
+  display: inline-block;
+  margin: 30px 20px;
+  margin-bottom: 3em;
+  text-align: center;
+  position: absolute;
+}
+
+video {
+  height: auto;
+  border: 1px solid;
+}
+
+#canvasSource {
+  display: inline-block;
+  margin: 30px 20px;
+ 
+  /*border: 50px solid red;
+  border-radius: 15px solid red;*/
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+ position:relative;
+}
+
+canvas {
+  padding: 10px;
+  min-width: 400px;
+  width: auto;
+  height: auto;
+  /*border: 50px solid red;
+  border-radius: 15px solid red;*/
+  background: rbga(255,0,0,0.2);
+  text-align: center;
+  /*opacity:0.5;*/
+  position:relative; 
+}
+
+.navbar{
+  color:white;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 1em;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  margin-top: 50px;
+  padding: 10px 20px;
+  min-width: 420px;
+  width: 50%;
+  height: auto;
+  color:red;
+}
+
+/*this is for the carousel*/
+.carousel .row .span3 {
+display: block;
+float: left;
+width: 25%;
+margin-left: 0;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+color:red;
+}
+
+#full-width {
+  width: 90%; /* desired relative width */
+  left: 5%; /* (100%-width)/2 */
+  /* place center */
+  margin-left:auto;
+  margin-right:auto; 
+}
+
