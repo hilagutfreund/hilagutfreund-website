@@ -1,0 +1,49 @@
+<!-- index.html -->
+    <!DOCTYPE html>
+    <html ng-app="scotchApp">
+    <head>
+      <!-- SCROLLS -->
+      <!-- load bootstrap and fontawesome via CDN -->
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+      <!-- #673ab7 color of icon -->
+
+      <!-- SPELLS -->
+      <!-- load angular and angular route via CDN -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+      <script src="js/main.js"></script>
+    </head>
+
+    <body ng-controller="mainController">
+
+        <!-- HEADER AND NAVBAR -->
+        <header>
+            <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" ui-sref="home">Hila Gutfreund</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a ui-sref="home"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a ui-sref="projects"><i class="fa fa-shield"></i> Projects</a></li>
+                    <li><a ui-sref="resume"><i class="fa fa-comment"></i> Resume</a></li>
+                </ul>
+            </div>
+            </nav>
+        </header>
+
+        <!-- MAIN CONTENT AND INJECTED VIEWS -->
+        <div id="main">
+
+            <!-- angular templating -->
+            <!-- this is where content will be injected -->
+             <div ui-view></div>
+
+        </div>
+
+    </body>
+    </html>

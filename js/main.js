@@ -24,16 +24,16 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.router']);
     // });
 
     scotchApp.config(function($stateProvider, $urlRouterProvider){
-        $urlRouterProvider.otherwise('home');
+        $urlRouterProvider.otherwise('portfolio');
         $stateProvider
-        .state('home', {
-            url: '/',
+        .state('portfolio', {
+            url: '/portfolio',
             templateUrl: 'templates/main.html',
-            controller: 'mainController'
+            controller: 'portfolioController'
         })
 
-        .state('projects', {
-            url: '/projects', 
+        .state('resume', {
+            url: '/resume', 
             templateUrl: 'templates/projects.html'
         })
     });
@@ -44,7 +44,7 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.router']);
         $scope.message = 'Everyone come and see how good I look!';
     });
 
-    scotchApp.controller('resumeController', function($scope) {
+    scotchApp.controller('portfolioController', function($scope) {
         $scope.message = 'Look! I am an about page.';
     });
 
