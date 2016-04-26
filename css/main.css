@@ -3,6 +3,10 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body{
+    background-image: url('/light_grey.png');
+}
+
 
 header{
     text-align: center;
@@ -10,9 +14,28 @@ header{
     padding-bottom:3.95em;
 }
 
-h1{
+h1#header{
     padding:.05em;
+  font-family: "Playfair Display", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;    /*font-style: italic;*/
+    font-weight: bold;
 }
+h1{
+      font-family: "Playfair Display", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; 
+    /*font-style: italic;*/
+    /*font-weight: bold;*/
+}
+
+h2, h3, h4, h5, li, a{
+    font-family:'Quicksand', sans-serif;
+}
+
+p, *{
+    font-family: 'EB Garamond', serif;
+}
+
+/*h1{
+    font-family: 'Marcellus';
+}*/
 
 div#navDiv{
     /*border:1px solid #ccc;*/
