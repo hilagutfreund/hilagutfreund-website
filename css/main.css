@@ -5,6 +5,7 @@
    ========================================================================== */
 body{
     background-image: url('/light_grey.png');
+    margin: 10px;
 }
 
 
@@ -14,10 +15,31 @@ header{
     padding-bottom:3.95em;
 }
 
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.rowCell {
+    background: white;
+    padding: 4px;
+}
+
+.rowCell img {
+    width: 100%;
+}
+
 h1#header{
     padding:.05em;
-  font-family: "Playfair Display", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;    /*font-style: italic;*/
-    font-weight: bold;
+    font-family: "Playfair Display", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;    /*font-style: italic;*/
+    /*font-weight: bold;*/
 }
 h1{
       font-family: "Playfair Display", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; 
@@ -27,6 +49,7 @@ h1{
 
 h2, h3, h4, h5, li, a{
     font-family:'Quicksand', sans-serif;
+    text-align: center;
 }
 
 p, *{
@@ -42,6 +65,7 @@ div#navDiv{
     border:1px solid #9d9995;
     border-width:1px 0;
     text-align: center;
+    /*background-color: white;*/
 
 }
 
