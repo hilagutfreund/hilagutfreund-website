@@ -34,6 +34,7 @@ header{
 
 .rowCell img {
     width: 100%;
+    /*width: em;*/
 }
 
 h1#header{
@@ -92,6 +93,7 @@ ul.nav>li>a{
     padding:10px;
     text-align:center;
     color:black;
+    font-size: 1.3em; 
     /*color:#673ab7;*/
 }
 
