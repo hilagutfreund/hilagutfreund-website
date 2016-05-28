@@ -1,3 +1,34 @@
+    // var feed = new Instafeed({
+    //     get: 'tagged',
+    //     tagName: 'awesome',
+    //     //clientId: '3271830693.467ede5.3d940be0e681483394ef1bc044270f05',
+    //     userId: "3271830693", 
+    //     accessToken: "3271830693.467ede5.3d940be0e681483394ef1bc044270f05",
+    //     template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+    // });
+    // feed.run();
+
+
+    // var feed = new Instafeed({
+    // userId: "3271830693", 
+    // accessToken: "3271830693.467ede5.3d940be0e681483394ef1bc044270f05",  
+
+$(document).ready(function(){
+ var userfeed = new Instafeed({
+        get: 'user',
+        userId: 3271830693, 
+        accessToken: "3271830693.467ede5.3d940be0e681483394ef1bc044270f05", 
+        filter: function(image){
+            return image.user.username === "hilariousdesigns"; 
+        },
+        useHttp: true,
+        sortBy: "most-recent",
+        limit: 20
+    });
+    userfeed.run();
+}); 
+
+
 var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.router']);
 
     // configure our routes

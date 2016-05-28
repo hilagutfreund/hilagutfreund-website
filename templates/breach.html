@@ -1,8 +1,9 @@
+<! -- webpage for breach --> 
 <!-- index.html -->
     <!DOCTYPE html>
-    <html ng-app="scotchApp">
+    <html>
     <head>
-      <title>Hila Gutfreund</title>
+      <title>Breach</title>
       <!-- SCROLLS -->
       <!-- load bootstrap and fontawesome via CDN -->
       <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
@@ -18,13 +19,10 @@
 
       <!-- SPELLS -->
       <!-- load angular and angular route via CDN -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
-      <script type="text/javascript" src="node_modules/instafeed.js/instafeed.min.js"></script>
       <script src="js/main.js"></script>
-
     </head>
 
     <body ng-controller="mainController">
@@ -37,8 +35,8 @@
  <header> 
  <!-- <div class="text-center"> -->
        
-      <h1 id='header'>Hila Gutfreund</h1>
-      <h4>Developer and grid addict</h4>
+      <h1 id='header'>Breach</h1>
+      <h4>An augmented reality tower destruction game for mobile</h4>
       <!--
       <div class="logo">
         <a href="index.html"><img src="img/logo.png" alt="Your Name Here" /></a>
@@ -47,28 +45,25 @@
   <!-- </div> -->
 </header>
     
-  
+<!--   
   <div id="navDiv">
-    <!-- <nav> -->
       <ul class="nav">
         <li><a ui-sref="portfolio" ui-sref-active-eq="active"><i class="fa fa-folder-open"></i> Portfolio</a></li>
         <li><a ui-sref="about" ui-sref-active-eq="active"><i class="fa fa-info-circle"></i> About</a></li> 
-        <li><a ui-sref="resume" ui-sref-active-eq="active"><i class="fa fa-file-text"></i> Resume</a></li>         
-        
+        <li><a ui-sref="resume" ui-sref-active-eq="active"><i class="fa fa-file-text"></i> Resume</a></li>  
       </ul>
-    <!-- </nav> -->
-  </div>
-  <!-- </header> -->
-<!-- </div> -->
+  </div> -->
+
 
         <!-- MAIN CONTENT AND INJECTED VIEWS -->
 
         <div id="main">
 
+
             <!-- angular templating -->
             <!-- this is where content will be injected -->
-             <div ui-view></div>
-
+<!--              <div ui-view></div>
+ -->
         </div>
 
       <footer>
