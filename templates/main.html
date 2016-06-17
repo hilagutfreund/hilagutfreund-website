@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-6 col-sm-3 col-md-3 well rowCell">
-            <img src="http://lorempixel.com/1500/600/abstract/1" />
+            <!-- <img src=/> -->
                 <h3><a href="https://github.com/OprahOfUnity/cs4172-finalProj">Breach</a></h3>
                 <label>Breach is an augmented reality, tower destruction game for mobile devices.</label>
    
@@ -46,17 +46,32 @@
 <!-- <div id="instafeed"></div>  -->
 <h2>HILArious Designs</h2>
 <h4>Instagram showcasing my design and pattern work</h4>
-<div class="container">
-    <div class="row">
-        <div class="col-xs-6 col-sm-3 col-md-3 well rowCell">
-            <div id="instafeed"></div>
-        </div>
+<div class="instagram" ng-if="photosready=true">
+    <div class="gallery">
+        <ul class="img-thumbnails clearfix">
+          <li class="small-image pull-left thumbnail" ng-repeat="image in myfeed" ng-if="photoready=true">
+            <img ng-src="{{image['images']['thumbnail']['url']}}" /> 
+          </li>
+        </ul>
+      </div>
     </div>
-</div>
-
-<!-- <div class="bs-example">
-        <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
-            <div class="carousel-inner" id="instafeed">
+    <!-- <div class="container1">
+                <div class="carousel-inner" ng-repeat="image in myfeed" ng-if="photosready=true">
+                    <div>{{image}}</div>
+                    <div class="item">
+                          <div class="span3">
+                            <div class="img-circle">
+                                <img ng-src="{{image['images']['thumbnail']['url']}}"/>
+                              <a href="#"><img src="{{image['images']['standard_resolution']['url']}}" height="90" width="90" ng-if="photosready=true"></a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div> -->
+    </div>
+     <a class="carousel-control left" href="#myCarousel2" data-slide="prev"><i class="icon-chevron-left"></i></a>
+    <a class="carousel-control right" href="#myCarousel2" data-slide="next"><i class="icon-chevron-right"></i></a> -->
+</div>
+
