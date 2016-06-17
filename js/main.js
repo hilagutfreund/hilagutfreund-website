@@ -1,54 +1,4 @@
-// $(document).ready(function() {
-//     var accessToken = '3271830693.e8750bb.cb4e791f241b474d891c043abdac34c0';
-//     var userID = 3271830693;
-//     $(".instagram.search").instagram({
-//         userID = userID,
-//         show: 5,
-//         accessToken: accessToken
-//     });
-// });
-
-
-  // $(document).ready(function(){
-  //   jQuery(function($) {
-  //         $('.instagram').on('willLoadInstagram', function(event, options) {
-  //           console.log(options);
-  //         });
-  //         $('.instagram').on('didLoadInstagram', function(event, response) {
-  //           console.log(response);
-  //         });
-  //         $('.instagram').instagram({
-  //         userId: 3271830693,
-  //         accessToken: '3271830693.e8750bb.cb4e791f241b474d891c043abdac34c0'
-  //       });
-
-  //       })
-  //   }); 
-
-
 var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.router']);
-    // configure our routes
-    // scotchApp.config(function($routeProvider) {
-    //     $routeProvider
-
-    //         // route for the home page
-    //         .when('/', {
-    //             templateUrl : 'templates/main.html',
-    //             controller  : 'mainController'
-    //         })
-
-    //         // route for the about page
-    //         .when('/resume', {
-    //             templateUrl : 'templates/resume.html',
-    //             controller  : 'aboutController'
-    //         })
-
-    //         // route for the contact page
-    //         .when('/projects', {
-    //             templateUrl : 'templates/projects.html',
-    //             controller  : 'projectsController'
-    //         });
-    // });
 
     scotchApp.config(function($stateProvider, $urlRouterProvider){
         $urlRouterProvider.otherwise('portfolio');
@@ -100,10 +50,6 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.router']);
                 });
 
             });
-       
-
-
-        
     });
 
     scotchApp.controller('projectsController', function($scope) {

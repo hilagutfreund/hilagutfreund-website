@@ -50,7 +50,7 @@
     <div class="gallery">
         <ul class="img-thumbnails clearfix">
           <li class="small-image pull-left thumbnail" ng-repeat="image in myfeed" ng-if="photoready=true">
-            <img ng-src="{{image['images']['thumbnail']['url']}}" /> 
+            <a href="{{image.link}}"><img ng-src="{{image['images']['thumbnail']['url']}}" /></a>
           </li>
         </ul>
       </div>
