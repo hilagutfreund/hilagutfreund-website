@@ -1,6 +1,6 @@
-var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.router']);
+var hilaApp = angular.module('hilaApp', ['ngRoute', 'ui.router']);
 
-    scotchApp.config(function($stateProvider, $urlRouterProvider){
+    hilaApp.config(function($stateProvider, $urlRouterProvider){
         $urlRouterProvider.otherwise('portfolio');
         $stateProvider
         .state('portfolio', {
@@ -16,13 +16,12 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.router']);
     });
    
     // create the controller and inject Angular's $scope
-    scotchApp.controller('mainController', function($scope) {
+    hilaApp.controller('mainController', function($scope) {
         // create a message to display in our view
         $scope.message = 'Everyone come and see how good I look!';
     });
     
-    scotchApp.controller('portfolioController', function($scope, $rootScope) {
-        $scope.message = 'Look! I am an about page.';
+    hilaApp.controller('portfolioController', function($scope, $rootScope) {
         $scope.imagesReady = false; 
         $scope.$on('photosready', function(events, args){
             $scope.photosready = true; 
@@ -50,8 +49,34 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.router']);
                 });
 
             });
+
+        $scope.myprojects = [
+            {
+                "title": "WDJC", 
+                "description": "DJ is a procedural scripting language for algorithmic music production.", 
+                "year": "PLT, 2013",
+                "link": "http://whet-plt.github.io/wdjc/", 
+                "docLink": "https://github.com/WHET-PLT/documents",
+                "image": "img/WHET.png"
+            }, 
+            {   "title": "Squareday", 
+                "description": "SquareDay is a FourSquare based schedule generator.", 
+                "year": "User Interace Design, 2013",
+                "link": "http://squareday.github.io/squareday/", 
+                "docLink": "http://squareday.github.io/squareday/SquareDay_user.pdf", 
+                "image": "img/squareday.png"
+            }, 
+            {
+                "title": "Strokes", 
+                "description": "A gesture based video controlling web application.", 
+                "year": "User Interface Design, 2013",
+                "link": "http://hilagutfreund.github.io/Strokes/", 
+                "docLink": "http://hilagutfreund.github.io/Strokes/documentation.html",
+                "image": "img/daftPunk.jpg" 
+            }
+        ]; 
     });
 
-    scotchApp.controller('projectsController', function($scope) {
+    hilaApp.controller('projectsController', function($scope) {
         $scope.message = 'projects! JK. This is just a demo.';
     });

@@ -1,15 +1,15 @@
 
-<h2>Projects</h2>
-<h4>University projects completed at Columbia University</h4>
-<div class="container">
+<div id="projects" class="center">
+<!-- <h2>Projects</h2>
+<h4>University projects completed at Columbia University</h4> -->
+<!-- <div class="container" >
     <div class="row">
         <div class="col-xs-6 col-sm-3 col-md-3 well rowCell">
-            <!-- <img src=/> -->
                 <h3><a href="https://github.com/OprahOfUnity/cs4172-finalProj">Breach</a></h3>
                 <label>Breach is an augmented reality, tower destruction game for mobile devices.</label>
    
                 <label>3D UI and Augmented Reality, 2014</label>
-                <label><a href="">Breach Documentation</a></label>             
+                <label><a href="">Documentation</a></label>             
         </div>
         <div class="col-xs-6 col-sm-3 col-md-3 well rowCell">
             <img src="img/WHET.png" />
@@ -17,7 +17,8 @@
             <label>DJ is a procedural scripting language for algorithmic music production.</label>
    
             <label>PLT, 2013</label>  
-            <label><a href="https://github.com/WHET-PLT/documents">WDJC Documentation</a></label>              
+            <br>
+            <label><a href="https://github.com/WHET-PLT/documents">Documentation</a></label>              
         </div>
         <div class="col-xs-6 col-sm-3 col-md-3 well rowCell">
             <img src="img/squareday.png" />
@@ -26,7 +27,7 @@
 
             <label>User Interface Design, 2013</label> 
             <br>
-            <label><a href="http://squareday.github.io/squareday/SquareDay_user.pdf">Squareday Documentation</a></label>                 
+            <label><a href="http://squareday.github.io/squareday/SquareDay_user.pdf">Documentation</a></label>                 
         </div>
 
           <div class="col-xs-6 col-sm-3 col-md-3 well rowCell">
@@ -35,43 +36,53 @@
             <label>A gesture based video controlling web application.</label>
             <label>User Interface Design, 2013</label>
             <br>
-            <label><a href="">Strokes Documentation</a></label>                  
+            <label><a href="">Documentation</a></label>                  
         </div>
     </div>
+</div> -->
+<div>
+<h2>Projects</h2>
+<h4>University Programming Projects</h4>
+    <div class="project gallery">
+        <div class="inner">
+          <ul class="list">  
+           <li class="list-item" ng-repeat="project in myprojects">  
+             <div class="list-content">    
+              <a href="{{project.link}}"><h2>{{project.title}}</h2></a>  
+              <a href="{{project.link}}"><img id="projectImage" ng-src="{{project.image}}" alt=""/></a> 
+              <p id="projectDesc">{{project.description}}</p>  
+              <p>{{project.year}}</p>
+              <a href="{{project.docLink}}">Documentation</a>  
+            </div>  
+          </li>  
+        </ul>
+        </div>
+
+    </div>
 </div>
+
+</div>
+
 
 
 <br> 
 
 <!-- <div id="instafeed"></div>  -->
+<div>
 <h2>HILArious Designs</h2>
 <h4>Instagram showcasing my design and pattern work</h4>
-<div class="instagram" ng-if="photosready=true">
-    <div class="gallery">
-        <ul class="img-thumbnails clearfix">
-          <li class="small-image pull-left thumbnail" ng-repeat="image in myfeed" ng-if="photoready=true">
-            <a href="{{image.link}}"><img ng-src="{{image['images']['thumbnail']['url']}}" /></a>
-          </li>
+<!-- <div class="instagram center" ng-if="photosready=true"> -->
+    <div class="instagram gallery" ng-if="photosready=true">
+       
+        <div class="inner">
+          <ul class="list" ng-if="photosready=true">  
+           <li class="list-item" ng-repeat="image in myfeed" ng-if="photosready=true">  
+             <div class="list-content">    
+              <a href="{{image.link}}"><img ng-src="{{image['images']['thumbnail']['url']}}" alt="" /></a>   
+            </div>  
+          </li>  
         </ul>
-      </div>
-    </div>
-    <!-- <div class="container1">
-                <div class="carousel-inner" ng-repeat="image in myfeed" ng-if="photosready=true">
-                    <div>{{image}}</div>
-                    <div class="item">
-                          <div class="span3">
-                            <div class="img-circle">
-                                <img ng-src="{{image['images']['thumbnail']['url']}}"/>
-                              <a href="#"><img src="{{image['images']['standard_resolution']['url']}}" height="90" width="90" ng-if="photosready=true"></a>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
-     <a class="carousel-control left" href="#myCarousel2" data-slide="prev"><i class="icon-chevron-left"></i></a>
-    <a class="carousel-control right" href="#myCarousel2" data-slide="next"><i class="icon-chevron-right"></i></a> -->
-</div>
 
+    </div>
+</div>
