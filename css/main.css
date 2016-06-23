@@ -15,33 +15,12 @@ header{
     padding-bottom:3.95em;
 }
 
-/*.row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-  flex-wrap: wrap;
-}*/
-/*.row > [class*='col-'] {
-  display: flex;
-  flex-direction: column;
-}
-
-.rowCell {
-    background: white;
-    padding: 4px;
-}
-
-.rowCell img {
-    width: 100%;
-    /*width: em;*/
-    max-height: 175px; 
-}*/
 
 h1#header{
     padding:.05em;
     font-family: "Playfair Display", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;    /*font-style: italic;*/
     /*font-weight: bold;*/
+
 }
 h1{
       font-family: "Playfair Display", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; 
@@ -298,6 +277,23 @@ div.inner{
     padding: 0.5em;
     width: 100%;
   }
+   h1{
+    font-size: 2em;
+  }
+  h2{
+    font-size:1.625em;
+  }
+  h3{
+    font-size:1.375em;
+  }
+  h4{
+    font-size:1.125em;
+  }
+  p{font-size:1em;}
+  a{
+    font-size:1em;
+    color: #673ab7;
+  }
 }
 
 @media only screen and (max-device-width:480px) and (orientation:landscape){
@@ -305,6 +301,23 @@ div.inner{
     width: 50%;
     padding: 0.5em;
     display:flex;
+  }
+  h1{
+    font-size: 2em;
+  }
+  h2{
+    font-size:1.625em;
+  }
+  h3{
+    font-size:1.375em;
+  }
+  h4{
+    font-size:1.125em;
+  }
+  p{font-size:1em;}
+  a{
+    font-size:1em;
+    color: #673ab7;
   }
 
 
