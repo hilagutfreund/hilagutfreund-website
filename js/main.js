@@ -2,7 +2,6 @@ var hilaApp = angular.module('hilaApp', ['ngRoute', 'ui.router']);
 
     hilaApp.config(function($stateProvider, $urlRouterProvider){
         $urlRouterProvider.otherwise('portfolio');
-        // $urlRouterProvider.when('resume', 'documents-forweb/HilaGutfreund-Resume-2016.pdf');
         $stateProvider
         .state('portfolio', {
             url: '/portfolio',
@@ -21,7 +20,6 @@ var hilaApp = angular.module('hilaApp', ['ngRoute', 'ui.router']);
     // create the controller and inject Angular's $scope
     hilaApp.controller('mainController', function($scope) {
         // create a message to display in our view
-        $scope.message = 'Everyone come and see how good I look!';
         $scope.resume = "documents-forweb/HilaGutfreund-resume-2016.pdf"; 
     });
     

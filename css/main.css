@@ -54,6 +54,9 @@ h2, h3, h4, h5, li, a{
     text-align: center;
     color:black;
 }
+h4:hover{
+ color: #673ab7;
+}
 
 p, *{
     font-family: 'EB Garamond', serif;
@@ -119,9 +122,7 @@ ul.nav>li>a:focus{
     background-color: transparent;
 }
 
-h2:hover{
- color: #673ab7;
-}
+
 
 
 footer{
@@ -291,6 +292,20 @@ div.inner{
       width: 20%;
     }
 }
+
+@media only screen and (max-device-width:480px) and (orientation:portrait){
+    .list-item {
+    padding: 0.5em;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-device-width:480px) and (orientation:portrait){
+   .list-item {
+    width: 50%;
+    padding: 0.5em;
+    display:flex;
+  }
 
 
 
