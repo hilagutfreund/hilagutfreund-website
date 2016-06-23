@@ -105,7 +105,7 @@ var hilaApp = angular.module('hilaApp', ['ngRoute', 'ui.router']);
                 "break": 'br',
                 "description": "An essay detailing how the word 'brouhaha' has become an integral part of my life.", 
                 "year": "The Art of Being Oneself, 2011",
-                "link": "documents-forweb/brouhaha-artofbeingonself.pdf", 
+                "link": "documents-forweb/brouhaha-artofbeingoneself.pdf", 
                 "image": "img/brouhaha.gif",
                 "other": null,
                 "otherDesc": null
