@@ -178,10 +178,12 @@ p#projectDesc{
     text-align:center;
 }
 img#projectImage{
+    
     width:150px;
     height:150px;
     object-fit: cover;
 }
+
 
 .list-content {
    display: flex;
