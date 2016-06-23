@@ -74,8 +74,22 @@ var hilaApp = angular.module('hilaApp', ['ngRoute', 'ui.router']);
                 "docLink": "http://hilagutfreund.github.io/Strokes/documentation.html",
                 "image": "img/daftPunk.jpg" 
             }
-        ]; 
+        ];
+
+         $scope.mydocuments = [
+
+        {
+                "title": "WDJC", 
+                "description": "DJ is a procedural scripting language for algorithmic music production.", 
+                "year": "PLT, 2013",
+                "link": "http://whet-plt.github.io/wdjc/", 
+                "image": "img/WHET.png",
+                "other": null
+            }, 
+        ]
     });
+
+
 
     hilaApp.controller('projectsController', function($scope) {
         $scope.message = 'projects! JK. This is just a demo.';

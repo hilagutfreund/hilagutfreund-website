@@ -182,6 +182,28 @@ img#projectImage{
     height:150px;
     object-fit: cover;
 }
+
+.list-content {
+   display: flex;
+   flex-direction: column;
+   /*background-color: #fff;*/
+   padding: .5em;
+   width: 100%;
+}
+.list-content p {
+  flex: 1 0 auto;
+}
+
+div.inner{
+    margin: 0 auto; 
+}
+
+
+.list > div{
+    display:flex;
+    flex-flow:column;
+    align-items:center;
+}
 @media all and (min-width:4em) {
   .list-item {
     padding: 0.5em;
@@ -228,27 +250,7 @@ img#projectImage{
 }
 
 
-.list-content {
-   display: flex;
-   flex-direction: column;
-   background-color: #fff;
-   padding: .5em;
-   width: 100%;
-}
-.list-content p {
-  flex: 1 0 auto;
-}
 
-div.inner{
-    margin: 0 auto; 
-}
-
-
-.list > div{
-    display:flex;
-    flex-flow:column;
-    align-items:center;
-}
 
 /*img#projectImage{
    object-fit: cover;

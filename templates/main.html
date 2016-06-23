@@ -63,7 +63,27 @@
 
 </div>
 
+<br>
+<div #insta>
+<h2>Writing Samples</h2>
+<h4>Essays from over the years</h4>
+    <div class="project gallery">
+        <div class="inner">
+          <ul class="list">  
+           <li class="list-item" ng-repeat="document in mydocuments">  
+             <div class="list-content">    
+              <a href="{{document.link}}"><h2>{{document.title}}</h2></a>  
+              <a href="{{document.link}}"><img id="document" ng-src="{{document.image}}" alt=""/></a> 
+              <p id="projectDesc">{{document.description}}</p>  
+              <p>{{document.year}}</p>
+              <p ng-show="document.other">
+            </div>  
+          </li>  
+        </ul>
+        </div>
 
+    </div>
+</div>
 
 <br> 
 
@@ -85,4 +105,9 @@
         </div>
 
     </div>
+</div>
+
+<br>
+
+
 </div>
