@@ -22,7 +22,7 @@ var hilaApp = angular.module('hilaApp', ['ngRoute', 'ui.router']);
     hilaApp.controller('mainController', function($scope) {
         // create a message to display in our view
         $scope.message = 'Everyone come and see how good I look!';
-        $scope.resume = "documents-forweb/HilaGutfreund-Resume-2016.pdf"; 
+        $scope.resume = "documents-forweb/HilaGutfreund-resume-2016.pdf"; 
     });
     
     hilaApp.controller('portfolioController', function($scope, $rootScope) {
