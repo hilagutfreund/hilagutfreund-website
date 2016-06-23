@@ -157,12 +157,53 @@ label{
 a:hover{
     color:#673ab7;
 }
+img#aboutpic{
+    height:20em;
+    display: flex;
+justify-content: center; /* align horizontal */
+align-items: center;
+}
 
 .center{
     position:relative;
     left:50%;
     top:50%;
     transform: translate(-50%);
+}
+
+.aboutcontainer{
+    display:-ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap:wrap; 
+}
+@media all and (max-width:700px){  
+    div.columnright{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .columnleft>h3{
+        text-align:center !important;
+    }
+}
+
+
+.columnright{
+    flex: 1 0 30%;
+    /*width: 70%;*/
+    padding:.5em;
+    justify-content:center;
+    text-align:left;
+}
+.columnleft{
+    flex: 1 0 70%;
+    padding:.5em;
+    text-align:left;
+    
+}
+.columnleft>h3{
+    text-align:left;
 }
 
 /*For the instagram grid.. or any flex grid hopefully!!!*/
