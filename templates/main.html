@@ -1,69 +1,29 @@
 
 <div id="projects" class="center">
-<!-- <h2>Projects</h2>
-<h4>University projects completed at Columbia University</h4> -->
-<!-- <div class="container" >
-    <div class="row">
-        <div class="col-xs-6 col-sm-3 col-md-3 well rowCell">
-                <h3><a href="https://github.com/OprahOfUnity/cs4172-finalProj">Breach</a></h3>
-                <label>Breach is an augmented reality, tower destruction game for mobile devices.</label>
-   
-                <label>3D UI and Augmented Reality, 2014</label>
-                <label><a href="">Documentation</a></label>             
-        </div>
-        <div class="col-xs-6 col-sm-3 col-md-3 well rowCell">
-            <img src="img/WHET.png" />
-            <h3><a href="http://whet-plt.github.io/wdjc/">WDJC</a></h3>
-            <label>DJ is a procedural scripting language for algorithmic music production.</label>
-   
-            <label>PLT, 2013</label>  
-            <br>
-            <label><a href="https://github.com/WHET-PLT/documents">Documentation</a></label>              
-        </div>
-        <div class="col-xs-6 col-sm-3 col-md-3 well rowCell">
-            <img src="img/squareday.png" />
-            <h3>Squareday</h3>
-            <label>SquareDay is a FourSquare based schedule generator.</label>
+    <div>
+    <h2>Projects</h2>
+    <h5>University Programming Projects</h5>
+        <div class="project gallery">
+            <div class="inner">
+              <ul class="list">  
+               <li class="list-item" ng-repeat="project in myprojects">  
+                 <div class="list-content">    
+                  <a href="{{project.link}}"><h4>{{project.title}}</h4></a>  
+                  <a href="{{project.link}}"><img id="projectImage" ng-src="{{project.image}}" alt=""/></a> 
+                  <p id="projectDesc">{{project.description}}</p>  
+                  <p>{{project.year}}</p>
+                  <a href="{{project.docLink}}">Documentation</a>  
+                </div>  
+              </li>  
+            </ul>
+            </div>
 
-            <label>User Interface Design, 2013</label> 
-            <br>
-            <label><a href="http://squareday.github.io/squareday/SquareDay_user.pdf">Documentation</a></label>                 
-        </div>
-
-          <div class="col-xs-6 col-sm-3 col-md-3 well rowCell">
-            <img src="img/daftPunk.jpg" />
-            <h3>Strokes</h3>
-            <label>A gesture based video controlling web application.</label>
-            <label>User Interface Design, 2013</label>
-            <br>
-            <label><a href="">Documentation</a></label>                  
         </div>
     </div>
-</div> -->
-<div>
-<h2>Projects</h2>
-<h5>University Programming Projects</h5>
-    <div class="project gallery">
-        <div class="inner">
-          <ul class="list">  
-           <li class="list-item" ng-repeat="project in myprojects">  
-             <div class="list-content">    
-              <a href="{{project.link}}"><h4>{{project.title}}</h4></a>  
-              <a href="{{project.link}}"><img id="projectImage" ng-src="{{project.image}}" alt=""/></a> 
-              <p id="projectDesc">{{project.description}}</p>  
-              <p>{{project.year}}</p>
-              <a href="{{project.docLink}}">Documentation</a>  
-            </div>  
-          </li>  
-        </ul>
-        </div>
-
-    </div>
-</div>
-
 </div>
 
 <br>
+
 <div #insta>
 <h2>Writing Samples</h2>
 <h5>Essays from over the years</h5>
@@ -87,11 +47,9 @@
 
 <br> 
 
-<!-- <div id="instafeed"></div>  -->
 <div>
 <a href="https://www.instagram.com/hilariousdesigns/"><h2>HILArious Designs</h2></a>
 <h5>Instagram showcasing my latest design and pattern work</h5>
-<!-- <div class="instagram center" ng-if="photosready=true"> -->
     <div class="instagram gallery" ng-if="photosready=true">
        
         <div class="inner">

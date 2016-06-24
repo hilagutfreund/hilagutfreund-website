@@ -19,7 +19,6 @@ var hilaApp = angular.module('hilaApp', ['ngRoute', 'ui.router']);
    
     // create the controller and inject Angular's $scope
     hilaApp.controller('mainController', function($scope) {
-        // create a message to display in our view
         $scope.resume = "documents-forweb/HilaGutfreund-resume-2016.pdf"; 
     });
     
@@ -36,14 +35,10 @@ var hilaApp = angular.module('hilaApp', ['ngRoute', 'ui.router']);
 
         jQuery(function($) {
           $('.instagram').on('willLoadInstagram', function(event, options) {
-            console.log(options);
           });
           $('.instagram').on('didLoadInstagram', function(event, response) {
-            //console.log(response);
             $scope.images = response['data']; 
-            //$scope.imagesReady = true; 
             $rootScope.$broadcast('photosready', $scope.images);
-            //console.log($scope.images[0]['images']['thumbnail']);
           });
          $('.instagram').instagram({
                   userId: 3271830693,
@@ -78,7 +73,7 @@ var hilaApp = angular.module('hilaApp', ['ngRoute', 'ui.router']);
             }
         ];
 
-         $scope.mydocuments = [
+        $scope.mydocuments = [
 
             {
                 "title": "Home", 
@@ -124,5 +119,4 @@ var hilaApp = angular.module('hilaApp', ['ngRoute', 'ui.router']);
     });
 
     hilaApp.controller('aboutController', function($scope) {
-        $scope.message = 'projects! JK. This is just a demo.';
     });
