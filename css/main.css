@@ -33,9 +33,13 @@ h2, h3, h4, h5, li, a{
     text-align: center;
     color:black;
 }
-h4:hover{
+a>h2:hover{
  color: #673ab7;
 }
+a>h4:hover{
+ color: #673ab7;
+}
+
 
 p, *{
     font-family: 'EB Garamond', serif;
