@@ -1,5 +1,2 @@
-Hila Gutfreund
-
-Website for Hila Gutfreund. 
-
-Hila Gutfreund
+Hila Gutfreund's personal portfolio website. 
+Included are several projects from university, sample writing through the years, and pattern portfolio from Instagram. 

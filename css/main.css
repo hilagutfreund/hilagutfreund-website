@@ -11,8 +11,11 @@ body{
 
 header{
     text-align: center;
-    padding-top:6.25em ;
+   /* padding-top:6.25em ;*/
+   padding-top:5.5em;
     padding-bottom:3.95em;
+   /* padding-top:5em;
+    padding-bottom:2em;*/
 }
 
 
@@ -29,6 +32,9 @@ h2, h3, h4, h5, li, a{
     font-family:'Quicksand', sans-serif;
     text-align: center;
     color:black;
+}
+h2{
+    padding-top:0.5em;
 }
 a>h2:hover, a>h4:hover{
  color: #673ab7;

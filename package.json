@@ -19,6 +19,6 @@
   "dependencies": {
     "angular": "^1.5.5",
     "angular-ui-router": "^0.2.18",
-    "ui-router": "^1.0.0-alpha.3"
+    // "ui-router": "^1.0.0-alpha.3"
   }
 }

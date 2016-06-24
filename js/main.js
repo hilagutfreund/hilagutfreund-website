@@ -15,10 +15,11 @@ var hilaApp = angular.module('hilaApp', ['ngRoute', 'ui.router']);
             controller: 'aboutController'
 
         })
+
     });
    
     // create the controller and inject Angular's $scope
-    hilaApp.controller('mainController', function($scope) {
+    hilaApp.controller('mainController', function($scope, $rootScope) {
         $scope.resume = "documents-forweb/HilaGutfreund-resume-2016.pdf"; 
     });
     
@@ -120,3 +121,4 @@ var hilaApp = angular.module('hilaApp', ['ngRoute', 'ui.router']);
 
     hilaApp.controller('aboutController', function($scope) {
     });
+
