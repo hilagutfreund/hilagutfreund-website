@@ -74,49 +74,49 @@ var hilaApp = angular.module('hilaApp', ['ngRoute', 'ui.router']);
             }
         ];
 
-        $scope.mydocuments = [
+        // $scope.mydocuments = [
 
-            {
-                "title": "Home", 
-                "break": null,
-                "description": "A project on the concept of home through journal entries and works of Modern Jewish Literature.", 
-                "year": "JTS Senior Seminar, 2013",
-                "link": "documents-forweb/homethroughjournals.pdf", 
-                "image": "img/home.jpg",
-                "other": "documents-forweb/finalexplanation-seniorseminar.pdf", 
-                "otherDesc": "Explanation of project"
-            }, 
-            {
-                "title": "Butler Library", 
-                "break": null,
-                "description": "An essay exploring the Columbia University Library, Butler, as a type of home.", 
-                "year": "The Art of Being Onself, 2011",
-                "link": "documents-forweb/butlerlibrary.pdf", 
-                "image": "img/butler.jpg",
-                "other": null, 
-                "otherDesc": null
-            }, 
-            {
-                "title": "Brou-Ha-What?",
-                "break": 'br',
-                "description": "An essay detailing how the word 'brouhaha' has become an integral part of my life.", 
-                "year": "The Art of Being Oneself, 2011",
-                "link": "documents-forweb/brouhaha-artofbeingoneself.pdf", 
-                "image": "img/brouhaha.gif",
-                "other": null,
-                "otherDesc": null
-            }, 
-            {
-                "title": "Margalit Street", 
-                "break": 'br',
-                "description": "An essay detailing my connection to my old neighborhood and house.", 
-                "year": "The Art of the Essay, 2009",
-                "link": "documents-forweb/journeytochildhood.pdf", 
-                "image": "img/street.jpg",
-                "other": null, 
-                "otherDesc": null
-            } 
-        ]
+        //     {
+        //         "title": "Home", 
+        //         "break": null,
+        //         "description": "A project on the concept of home through journal entries and works of Modern Jewish Literature.", 
+        //         "year": "JTS Senior Seminar, 2013",
+        //         "link": "documents-forweb/homethroughjournals.pdf", 
+        //         "image": "img/home.jpg",
+        //         "other": "documents-forweb/finalexplanation-seniorseminar.pdf", 
+        //         "otherDesc": "Explanation of project"
+        //     }, 
+        //     {
+        //         "title": "Butler Library", 
+        //         "break": null,
+        //         "description": "An essay exploring the Columbia University Library, Butler, as a type of home.", 
+        //         "year": "The Art of Being Onself, 2011",
+        //         "link": "documents-forweb/butlerlibrary.pdf", 
+        //         "image": "img/butler.jpg",
+        //         "other": null, 
+        //         "otherDesc": null
+        //     }, 
+        //     {
+        //         "title": "Brou-Ha-What?",
+        //         "break": 'br',
+        //         "description": "An essay detailing how the word 'brouhaha' has become an integral part of my life.", 
+        //         "year": "The Art of Being Oneself, 2011",
+        //         "link": "documents-forweb/brouhaha-artofbeingoneself.pdf", 
+        //         "image": "img/brouhaha.gif",
+        //         "other": null,
+        //         "otherDesc": null
+        //     }, 
+        //     {
+        //         "title": "Margalit Street", 
+        //         "break": 'br',
+        //         "description": "An essay detailing my connection to my old neighborhood and house.", 
+        //         "year": "The Art of the Essay, 2009",
+        //         "link": "documents-forweb/journeytochildhood.pdf", 
+        //         "image": "img/street.jpg",
+        //         "other": null, 
+        //         "otherDesc": null
+        //     } 
+        // ]
     });
 
     hilaApp.controller('aboutController', function($scope) {
