@@ -38,12 +38,13 @@ h2{
 }
 a>h2:hover, a>h4:hover{
  color: #673ab7;
+ text-decoration: underline;
 }
 
 
 a:hover, a:focus, a:active{
     color:#673ab7 !important;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 p, *{
@@ -134,11 +135,12 @@ label{
     font-weight:normal; 
 }
 
-img#aboutpic{
-    height:20em;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
+
+.profilepic{
+  max-height:320px;
+  display: inline-block;
+  float:none;
+  padding:.5em;
 }
 
 .center{
@@ -146,40 +148,6 @@ img#aboutpic{
     left:50%;
     top:50%;
     transform: translate(-50%);
-}
-
-.aboutcontainer{
-    display:-ms-flex;
-    display: -webkit-flex;
-    display: flex;
-    flex-wrap:wrap; 
-}
-@media all and (max-width:1130px){  
-    div.columnright{
-        display:flex;
-        justify-content:center;
-        align-items:center;
-    }
-    .columnleft>h3{
-        text-align:center !important;
-    }
-}
-
-
-.columnright{
-    flex: 1 0 20%;
-    padding:.5em;
-    justify-content:center;
-    text-align:left;
-}
-.columnleft{
-    flex: 1 0 75%;
-    padding:.5em;
-    text-align:left;
-    
-}
-.columnleft>h3{
-    text-align:left;
 }
 
 /*For the instagram grid.. or any flex grid hopefully!!!*/
@@ -194,85 +162,43 @@ ul.list{
 p#projectDesc{
     text-align:center;
 }
-img#projectImage{
-    
-    width:150px;
-    height:150px;
-    object-fit: cover;
+
+
+.image-holder { 
+  /*height: 15em;*/
+  width:100%;
+  height:100%;
+  max-width: 320px; 
+  max-height:320px;
+  object-fit: cover;
 }
 
+.image-holder-insta{
+  /*height:12em;*/
+  object-fit:cover;
+}
 
 .list-content {
-   display: flex;
-   flex-direction: column;
+   /*display: flex;
+   flex-direction: column;*/
    /*background-color: #fff;*/
    padding: .5em;
    width: 100%;
+   text-align:center;
+   display: inline-block;
+   float:none;
 }
 .list-content p {
-  flex: 1 0 auto;
+  /*flex: 1 0 auto;*/
+  text-align: center;
 }
 
-div.inner{
-    margin: 0 auto; 
+.list-content img{
+  text-align:center;
+  display:inline-block;
+  float:none;
 }
 
-
-.list > div{
-    display:flex;
-    flex-flow:column;
-    align-items:center;
-}
-@media all and (min-width:4em) {
-  .list-item {
-    padding: 0.5em;
-    width: 100%;
-  }
-}
-
-@media all and (min-width: 30em) {
-   .list-item {
-    width: 50%;
-    padding: 0.5em;
-    display:flex;
-  }
-}
-
-@media all and (min-width:40em){
-    .instagram > .list-item{
-        display:flex;
-        padding:0.5em;
-        width:33.33%;
-    }
-}
-@media all and (min-width: 45em) {
-    .list-item {
-      display: flex; 
-      padding: 0.5em;
-      width: 33.33%;
-    }
-}
-
-@media all and (min-width: 50em) {
-    .list-item {
-      display: flex; 
-      padding: 0.5em;
-      width: 25%;
-    }
-
-@media all and (min-width: 60em) {
-    .list-item {
-      display: flex; 
-      padding: 0.5em;
-      width: 20%;
-    }
-}
-
-@media only screen and (max-device-width:480px) and (orientation:portrait){
-    .list-item {
-    padding: 0.5em;
-    width: 100%;
-  }
 
   div.columnright{
         display:flex;
@@ -285,12 +211,6 @@ div.inner{
 
 }
 
-@media only screen and (max-device-width:480px) and (orientation:landscape){
-   .list-item {
-    width: 50%;
-    padding: 0.5em;
-    display:flex;
-  }
 
   div.columnright{
         display:flex;
@@ -302,21 +222,6 @@ div.inner{
     }
 
   }
-
-
-
-
-/*img#projectImage{
-   object-fit: cover;
-   height: 150px;
-   width: 150px;
-}*/
-
-/*#project > .list > div{
-    display:flex;
-    flex-flow:column;
-    align-items:center;
-}*/
 
 
 
