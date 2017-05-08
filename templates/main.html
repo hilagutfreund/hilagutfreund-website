@@ -5,11 +5,11 @@
     <h5>University Programming Projects</h5>
 
         <div class="container-fluid">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" ng-repeat="project in myprojects">  
+          <div class="row is-flex">
+              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" ng-repeat="project in myprojects">  
                  <div class="list-content">    
                   <a href="{{project.link}}"><h4>{{project.title}}</h4></a>  
-                  <a href="{{project.link}}"><img class="image-holder block-center thumbnail" ng-src="{{project.image}}" alt=""/></a> 
+                  <a href="{{project.link}}" target="_blank"><img class="image-holder block-center thumbnail" ng-src="{{project.image}}" alt=""/></a> 
                   <p id="projectDesc">{{project.description}}</p>  
                   <p>{{project.year}}</p>
                   <a href="{{project.docLink}}">Documentation <i class="fa fa-external-link-square" aria-hidden="true"></i></a>  
@@ -54,7 +54,7 @@
     <div class="row" ng-if="photosready=true">
       <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" ng-repeat="image in myfeed" ng-if="photosready=true"> 
         <div class="list-content">
-           <a href="{{image.link}}"><img ng-src="{{image['images']['low_resolution']['url']}}" class="thumbnail block-center" alt="" /></a> 
+           <a href="{{image.link}}" target="_blank"><img ng-src="{{image['images']['low_resolution']['url']}}" class="thumbnail block-center" alt="" /></a> 
         </div>
       </div> 
     </div>
