@@ -53,31 +53,31 @@ var hilaApp = angular.module('hilaApp', ['ngRoute', 'ui.router']);
                 "title": "WDJC", 
                 "description": "DJ is a procedural scripting language for algorithmic music production.", 
                 "year": "Columbia: PLT, 2013",
-                "link": "http://whet-plt.github.io/wdjc/", 
+                "link": "https://whet-plt.github.io/wdjc/", 
                 "docLink": "https://github.com/WHET-PLT/documents",
                 "image": "img/WHET.png"
             }, 
             {   "title": "Squareday", 
                 "description": "SquareDay is a FourSquare based schedule generator.", 
                 "year": "Columbia: User Interace Design, 2013",
-                "link": "http://squareday.github.io/squareday/", 
-                "docLink": "http://squareday.github.io/squareday/SquareDay_user.pdf", 
+                "link": "https://squareday.github.io/squareday/", 
+                "docLink": "https://squareday.github.io/squareday/SquareDay_user.pdf", 
                 "image": "img/squareday.png"
             }, 
             {
                 "title": "Strokes", 
                 "description": "A gesture based video controlling web application.", 
                 "year": "Columbia: User Interface Design, 2013",
-                "link": "http://hilagutfreund.github.io/Strokes/", 
-                "docLink": "http://hilagutfreund.github.io/Strokes/documentation.html",
+                "link": "https://hilagutfreund.github.io/Strokes/", 
+                "docLink": "https://hilagutfreund.github.io/Strokes/documentation.html",
                 "image": "img/daftPunk.jpg" 
             },
              {
                 "title": "BuzzFeed Swami", 
                 "description": "A web appplication to find the answers to BuzzFeed quizes.", 
                 "year": "California, 2017",
-                "link": "http://hilagutfreund.github.io/BFQuiz/", 
-                "docLink": "",
+                "link": "https://hilagutfreund.github.io/BFQuiz/", 
+                "docLink": "https://hilagutfreund.github.io/BFQuiz/",
                 "image": "img/bf-badge.png" 
             }
         ];
