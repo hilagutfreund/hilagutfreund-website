@@ -83,7 +83,7 @@ var hilaApp = angular.module('hilaApp', ['ngRoute', 'ui.router']);
             {
                 "title": "Heuristic Evaluation", 
                 "description": "A usability evaluation for Amazon Music app.", 
-                "year": "SJSU, 2017",
+                "year": "SJSU: Engineering Psychology, 2017",
                 "link": "https://www.hilariousdesigns.com/EngineeringPsychology/AmazonMusicApp/", 
                 "docLink": "https://drive.google.com/file/d/1I2wJgH3MNeAWVzPltwA_Gi1PlcnsWG5Z/view?usp=sharing",
                 "image": "img/musiclogo.png" 
