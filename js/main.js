@@ -74,7 +74,7 @@ var hilaApp = angular.module('hilaApp', ['ngRoute', 'ui.router']);
             },
              {
                 "title": "BuzzFeed Swami", 
-                "description": "A web appplication to find the answers to BuzzFeed quizes.", 
+                "description": "A web application to find the answers to BuzzFeed quizzes.", 
                 "year": "California, 2017",
                 "link": "https://www.hilariousdesigns.com/BFQuiz/#/bf", 
                 "docLink": "https://www.hilariousdesigns.com/BFQuiz/#/bf",
