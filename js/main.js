@@ -68,16 +68,16 @@ var hilaApp = angular.module('hilaApp', ['ngRoute', 'ui.router']);
                 "title": "Strokes", 
                 "description": "A gesture based video controlling web application.", 
                 "year": "Columbia: User Interface Design, 2013",
-                "link": "https://hilagutfreund.github.io/Strokes/", 
-                "docLink": "https://hilagutfreund.github.io/Strokes/documentation.html",
+                "link": "hhttps://www.hilariousdesigns.com/Strokes/", 
+                "docLink": "https://www.hilariousdesigns.com/Strokes/documentation.html",
                 "image": "img/daftPunk.jpg" 
             },
              {
                 "title": "BuzzFeed Swami", 
                 "description": "A web appplication to find the answers to BuzzFeed quizes.", 
                 "year": "California, 2017",
-                "link": "https://hilagutfreund.github.io/BFQuiz/", 
-                "docLink": "https://hilagutfreund.github.io/BFQuiz/",
+                "link": "https://www.hilariousdesigns.com/BFQuiz/#/bf", 
+                "docLink": "https://www.hilariousdesigns.com/BFQuiz/#/bf",
                 "image": "img/bf-badge.png" 
             },
             {
